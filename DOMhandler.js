@@ -38,7 +38,26 @@ $('.inputBox').keypress(function (keypress) {
  	event.preventDefault();
     event.currentTarget.value = ""; /////////This works, but not exactly using jQuery//////////////
   } 
-});
+}); ///////function works perfectly now//////////
 
 ///////Need to add delete and edit buttons//////////
+////////This is dynamically created button/////////
+var $button = $('<button/>', {
+  type: 'button',
+  'class': 'dynBtn',
+  id: 'mike',
+  text: 'Here!',
+  click: function() {
+    window.alert('Hello! My id is '+ this.id);
+  }
+});
+
+$button.appendTo('#output');
+////////////////////////////////////////////
+
+
+
+
+
+
 
