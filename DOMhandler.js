@@ -1,3 +1,5 @@
+"use strict";
+
 //////targets the button and changes the body class "light" to "dark"-defined in the CSS////////
 $("#darkTheme").click(function(){
 $(".light").toggleClass("dark")});
@@ -27,25 +29,16 @@ $("#clearMessages").click(function(){
 $( ".radio input" ).click(function() {
 	// console.log("fired"); //////// Click event is working ///////
 	// console.log($('input[name=person]:checked').val()); ///////shows the person whos is being clicked
-	$('.inputBox').keypress(function (keypress) {
+	})
+$('.inputBox').keypress(function (keypress) {
   if (keypress.which == 13) {
  	//console.log("working") ////////// enter button is firing correctly
  	$('#output').append("<h6>" + $('input[name=person]:checked').val() + ": " + $('.inputBox').val() + "</h6>"); /////sucessfully outputs into output box///////////
  	////////need input box to clear after pressing enter///////////////////////
  	event.preventDefault();
     event.currentTarget.value = ""; /////////This works, but not exactly using jQuery//////////////
-  } ////////Currently prints out more than necessary////////////
-})
+  } 
 });
 
 ///////Need to add delete and edit buttons//////////
-
-
-
-
-
-
-
-
-
 
