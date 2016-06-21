@@ -1,0 +1,15 @@
+.dark {
+	background-color: rgba(7, 7, 7, 0.7);
+	color: white;
+}
+
+.dark button {
+	background-color: black;
+	color: gold;
+}
+
+/*this insures that the input text stays black when the dark theme is applied*/
+nav.dark > input {
+	background-color: rgba(7, 7, 7, 0.4);
+	color: gold;
+}

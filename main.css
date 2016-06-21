@@ -1,0 +1,111 @@
+.radio input{
+	display: inline;
+	padding: 0 3	0px;
+}
+
+#img{
+	width: 60px;
+	height: 50px;
+}
+#nametag{
+	color: yellow;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	font-size: 1.6em;
+}
+
+#nametag:hover {
+  margin: 0;
+  text-shadow: 0 0 5px rgba(255,255,255,1) , 0 0 5px rgba(255,255,255,1) , 0 0 5px rgba(255,255,255,1) 
+  , 0 0 40px #00ffff , 0 0 70px #00ffff , 0 0 80px #00ffff , 0 0 100px #00ffff ;
+}
+
+.nav {
+	position: fixed
+	width: 80%;
+	text-align: center;
+	margin-top: 20px;
+}
+
+.inputBox {
+	width:68%;
+	height: 25px;
+}
+
+#clearMessages {
+	height: 25px;
+	border-radius: 5px;
+	margin-bottom: 10px;
+}
+
+.checkbox {
+	margin-left: 2%;
+	display: inline;
+}
+
+#output {
+	border: 1px solid black;
+	width: 70%;
+	height: 22em;
+	margin: 0 auto;
+  /*the following 3 lines make a scroll bar*/
+  overflow:scroll;
+  overflow-x:hidden;
+  
+}
+#outputContainer {
+	margin: 0 auto;
+/*	text-align: center;*/
+}
+
+#messagesTitle {
+		border: 1px solid black;
+		width: 70%;
+		margin: 10px auto 0 auto;
+		font-size: 1.2em;
+		font-family: Geneva, sans-serif;
+		text-align: center;
+		background: gold;
+		color: #444;
+		font-weight: bold;
+}
+
+.timestamp {
+	color: red;
+	font-style: italic;
+	padding: 0 5px;
+	font-size: .8em;
+}
+
+.messageText {
+	padding-right: 20px;
+}
+
+.userName {
+	font-weight: bold;
+}
+
+#users {
+	border: none;
+}
+
+.userLabel {
+	padding: 0 10px 0 2px;
+}
+
+
+/*enlarge text*/
+.enlargeText {
+	font-size: 1.5em;
+}
+
+.enlargeText .timestamp {
+	font-size: 1.1rem;
+}
+
+.staysBlack, #userInput, .deleteButton {
+    color: black;
+}
+
+
+
+
