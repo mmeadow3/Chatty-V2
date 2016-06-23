@@ -33,12 +33,48 @@ $( ".radio input" ).click(function() {
 $('.inputBox').keypress(function (keypress) {
   if (keypress.which == 13) {
  	//console.log("working") ////////// enter button is firing correctly
- 	$('#output').append("<h6>" + $('input[name=person]:checked').val() + ": " + $('.inputBox').val() + "</h6>"); /////sucessfully outputs into output box///////////
+ 	var newText = "<h6>" + $('input[name=person]:checked').val() + ": " + $('.inputBox').val() + "</h6>"
+ 	$('#output').append(newText); /////sucessfully outputs into output box///////////
  	////////need input box to clear after pressing enter///////////////////////
  	event.preventDefault();
     event.currentTarget.value = ""; /////////This works, but not exactly using jQuery//////////////
   } 
-});
+}); ///////function works perfectly now//////////
 
 ///////Need to add delete and edit buttons//////////
+////////This is dynamically created button/////////
+////////This is simply an example that returns a popup with some text/////////////
+// var $button = $('<button/>', {
+//   type: 'button',
+//   'class': 'dynBtn',
+//   id: 'mike',
+//   text: 'Here!',
+//   click: function() {
+//     window.alert('Hello! My id is '+ this.id);
+//   }
+// });
+// $button.appendTo('#output');
+/////////////////Delete button///////////////////////////
+var $button = $('<button/>', {
+  type: 'button',
+  'class': 'deleteButton',
+  id: 'delete',
+  text: 'Delete',
+  click: function() { ///////start of function///////
+    $(this).parent().remove();
+  }
+});
+// $('#output h6').append($button); ////////not appending
+var $editButton = $('<button/>', {
+  type: 'button',
+  'class': 'editButton',
+  id: 'edit',
+  text: 'Edit',
+  click: function() { ///////start of function///////
+  
+}});
+ // $editButton.appendTo('#output');
+
+
+
 
